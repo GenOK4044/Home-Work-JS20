@@ -1,0 +1,240 @@
+$main-color: #ff4e50;
+$roboto-font: 'Roboto', sans-serif, arial;
+$montserrat-font: 'Montserrat', sans-serif, arial;
+.clear {
+	clear: both;
+}
+
+
+.wrapper {
+	width: 100%;
+	font-family: $roboto-font;
+	font-size: 100%;
+}
+	.main-header {
+		width: 100%;
+		min-height: 700px;
+		background-image: url('../../src/image/header-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		color: white;
+		padding-top: 32px;
+	}
+		.main-header p {
+			padding-bottom: 20px;
+		}
+		.main-header-header {
+			text-transform: uppercase;
+			letter-spacing: 4.5px;
+			line-height: 55px;
+			padding: 175px 0px 20px 0;
+		}
+		.header-logo{
+			width: 50%;
+			float: left;
+		}
+			.header-logo h3 {
+				text-transform: uppercase;
+				padding: 6px 0px 0px 0px;
+			}
+		.main-header-nav {
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+			.button {
+				background: transparent;
+    			border: 2px solid white;
+    			padding: 10px;
+    			border-radius: 40px;
+    			color: white;
+    			cursor: pointer;
+			}
+				.button__hover {
+					border-color: transparent;
+					margin-left: 20px;
+					transition: all 0.6s;
+				}
+					.button__hover:hover {
+						border-color: white;
+					}
+		.red {
+			background-color: $main-color;
+			border: none;
+		}
+	.content {
+		width: 71%;
+		margin: 0 auto;
+	}
+		
+		.sliders-wrapper {
+			width: 100%;
+			min-height: 555px;
+			position: relative;
+			font-size: 1em;
+			clear: both;
+		}
+			.section-header {
+				color: #333333;
+				font-family: $montserrat-font;
+				font-weight: bold;
+				min-height: 155px;
+			}
+				h3 {
+					display: block;
+					text-align: center;
+					padding-top: 70px;
+				}
+		.meet-a-partner {
+			width: 100%;
+			min-height: 465px;
+			text-align: center;
+		}
+			.meet-a-partner-box {
+				width: 23%;
+				padding: 0 1%;
+				float: left;
+				text-align: center;
+				margin-top: 40px;
+			}
+				.meet-a-partner-box img {
+					border-radius: 50%;
+				}
+				.meet-a-partner-box p {
+					padding-top: 7%;
+					color: #8f8f8f;
+				}
+				.button__mar-top {
+					margin-top: 7%;
+					color: $main-color;
+					border-color: $main-color;
+				}
+		.tiles {
+			width: 100%;
+			min-height: 1350px;
+			text-align: center;
+		}
+			.tiles-wrapper {
+				width: 100%;
+				min-height: 990px;
+				border: 1px solid;
+				box-sizing: border-box;
+			}
+			.tiles p {
+				margin: 25px 0;
+				color: #8f8f8f;
+			}
+	.footer-line {
+		width: 100%;
+		border-top: 4px solid $main-color;
+	}
+	footer {
+		width: 71%;
+		margin: 0 auto;
+		min-height: 200px;
+	}
+		footer h3 {
+			text-align: left;
+			color: $main-color;
+			float: left;
+			width: 20%;
+		}
+		.footer-menu {
+			padding: 70px 0;
+    		width: 30%;
+    		float: left;
+		}
+			.footer-menu li {
+				padding: 5px 0;
+			}
+				.footer-menu a {
+					text-decoration: none;
+					color: #8f8f8f;
+				}
+				.footer-menu .color {
+					color: #333333;
+					display: block;
+    				font-weight: bold;
+    				margin-bottom: 14px;
+				}
+		footer img {
+			float: right;
+			padding-top: 70px;
+		}
+
+@media screen and (max-width: 769px) {
+	header {
+		
+	}
+	.content {
+		width: 100%;
+	} 
+		.sliders-wrapper {
+			
+		}
+		.meet-a-partner {
+			min-height: 435px;
+		}
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.meet-a-partner-box {
+		width: 48%;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	header {
+		min-height: 540px;
+	}
+		.header-logo {
+			width: 100%;
+		}
+		.main-header-nav {
+			width: 100%;
+			text-align: center;
+		}
+			.button__hover {
+				margin: 0;
+			}
+		.main-header-header	{
+			line-height: 35px;
+		}
+	.content {
+		width: 100%;
+	}
+		.sliders-wrapper {
+			min-height: 370px;
+		}
+			.section-header {
+				min-height: 75px;
+			}
+				.section-header span {
+					padding-top: 10%;
+    				font-size: 1.3em;
+				}
+		.meet-a-partner {
+			min-height: 1056px;
+		}
+			.meet-a-partner-box {
+				width: 98%;
+			}
+			h3 {
+				padding-top: 30px;
+				max-width: 250px;
+			}
+		.tiles {
+			min-height: 1165px;
+		}
+	footer {
+		width: 100%;
+	}
+}
+
+
